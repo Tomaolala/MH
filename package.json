@@ -1,0 +1,24 @@
+{
+  "name": "mh",
+  "version": "1.0.0",
+  "description": "MD to HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomaolala/MH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomaolala/MH/issues"
+  },
+  "homepage": "https://github.com/Tomaolala/MH#readme",
+  "devDependencies": {
+    "rollup": "^3.18.0"
+  },
+  "type": "module"
+}
