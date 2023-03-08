@@ -1,24 +1,34 @@
 {
-  "name": "mh",
+  "name": "rollup",
   "version": "1.0.0",
-  "description": "MD to HTML",
-  "main": "index.js",
+  "description": "rollup打包",
+  "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c rollup.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tomaolala/MH.git"
+    "dev": "rollup -c -w --environment NODE_ENV:dev",
+    "build": "rollup -c  --environment NODE_ENV:build"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tomaolala/MH/issues"
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^8.3.6",
+    "rollup": "^2.56.1",
+    "rollup-plugin-postcss": "^4.0.0"
   },
-  "homepage": "https://github.com/Tomaolala/MH#readme",
   "devDependencies": {
-    "rollup": "^3.18.0"
-  },
-  "type": "module"
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2"
+  }
 }
